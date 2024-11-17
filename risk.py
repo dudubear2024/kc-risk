@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+ 
 # 加载模型
 model_path = r'https://github.com/dudubear2024/kc-risk.git/random_forest_model.pkl'
 model = joblib.load(model_path)
