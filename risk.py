@@ -1,4 +1,3 @@
-!pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
 !pip install --upgrade numpy joblib streamlit pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
