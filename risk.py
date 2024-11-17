@@ -33,14 +33,3 @@ if st.button("预测"):
     predicted_proba = model.predict_proba(features)[0]
     early_keratoconus_risk = predicted_proba[2] * 100  # 假设类别2表示早期圆锥角膜
     
-    # 显示结果
-    st.write(f"**早期圆锥角膜的可能性:** {early_keratoconus_risk:.2f}%")
-    
-    # SHAP分析
-    explainer = shap.TreeExplainer(model)
-    shap_values = explainer.shap_values(features)
-    
-    # 显示SHAP值图形
-    st.write("**特征重要性分析:**")
-    shap.summary_plot(shap_values[2], pd.DataFrame([feature_values], columns=selected_features), plot_type="bar", show=False)
-    st.pyplot(plt)
