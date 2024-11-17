@@ -1,5 +1,3 @@
-!pip install --upgrade numpy joblib streamlit -i https://pypi.tuna.tsinghua.edu.cn/simple
-
 
 import streamlit as st
 import joblib
