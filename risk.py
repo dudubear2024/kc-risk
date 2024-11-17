@@ -1,6 +1,5 @@
 !pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
-!pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
-!pip install streamlit -i https://pypi.tuna.tsinghua.edu.cn/simple
+!pip install --upgrade numpy joblib streamlit pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 import streamlit as st
@@ -8,7 +7,6 @@ import joblib
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import shap
 
 # 加载模型
 model_path = r'C:\Users\hlibi\Desktop\data2\random_forest_model.pkl'
